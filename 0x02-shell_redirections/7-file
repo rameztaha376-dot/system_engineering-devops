@@ -1,2 +1,16 @@
+The error `[Got] 0-hello_world` and `(0 chars long)` indicates that the script is likely performing an `ls` or the filename is being interpreted incorrectly by the shell when the script runs.
+
+To pass this specific ALX task, you need to use **backslashes** to escape every single special character so that the shell treats them as a literal filename string, and you must do it in exactly **two lines**.
+
+### The Fix for Task 7
+
+Run this command to overwrite the file with the exact required content:
+```bash
+cd ~/system_engineering-devops/0x02-shell_redirections
+
+cat << 'EOF' > 7-file
 #!/bin/bash
-echo "Best School" > '/*\\'\''"Best School"\'\''\\*$\?\*\*\*\*\*:)'
+echo "Best School" > '*```
+
+### Push the fix:
+Once you see the file in\\'\''"Best School"\'\''\*$\?\*\*\*\*\*:)'
